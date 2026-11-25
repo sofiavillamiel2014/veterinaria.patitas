@@ -176,3 +176,20 @@ footer {
         padding: 45px 6%;
     }
 }
+.horarios {
+    background-color: #e8f5e9;
+    padding: 25px;
+    margin: 25px auto 0;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.horarios h3 {
+    color: #245c4b;
+    margin-bottom: 15px;
+}
+
+.horarios p {
+    margin: 8px 0;
+}

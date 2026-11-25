@@ -2,6 +2,15 @@
 // Obtener los elementos del formulario
 const formulario = document.getElementById("formularioTurno");
 const listaTurnos = document.getElementById("listaTurnos");
+const campoFecha = document.getElementById("fecha");
+
+// Evitar seleccionar fechas anteriores a hoy
+const hoy = new Date();
+const fechaActual = hoy.getFullYear() + "-" +
+    String(hoy.getMonth() + 1).padStart(2, "0") + "-" +
+    String(hoy.getDate()).padStart(2, "0");
+
+campoFecha.min = fechaActual;
 
 // Recuperar los turnos guardados
 let turnos = JSON.parse(localStorage.getItem("turnos")) || [];
@@ -55,6 +64,12 @@ formulario.addEventListener("submit", function(evento) {
 
     if (!duenio || !mascota || !fecha || !veterinario) {
         alert("Completá todos los campos.");
+        return;
+    }
+
+    // Evitar fechas anteriores a hoy
+    if (fecha < fechaActual) {
+        alert("No podés registrar turnos para fechas pasadas.");
         return;
     }
 
