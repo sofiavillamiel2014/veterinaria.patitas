@@ -1,0 +1,178 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5faf7;
+    color: #263b35;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #245c4b;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b9e6d0;
+}
+
+section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+.inicio {
+    background: linear-gradient(135deg, #d8eee2, #eff8f1);
+    padding: 110px 10%;
+}
+
+.inicio h2 {
+    font-size: 42px;
+    color: #245c4b;
+    margin-bottom: 15px;
+}
+
+.inicio p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #245c4b;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #397b64;
+}
+
+section h2 {
+    color: #245c4b;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.servicios article {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.servicios h3 {
+    color: #397b64;
+    margin-bottom: 12px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto 35px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #cbd9d0;
+    border-radius: 8px;
+}
+
+form button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    background-color: #245c4b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #397b64;
+}
+
+#listaTurnos {
+    max-width: 700px;
+    margin: auto;
+}
+
+footer {
+    background-color: #245c4b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .inicio h2 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}

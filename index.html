@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Patitas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🐾 Veterinaria Patitas</h1>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#turnos">Turnos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="inicio">
+            <h2>¡Cuidamos a quienes más querés!</h2>
+            <p>En Veterinaria Patitas cuidamos la salud y el bienestar de tus mascotas.</p>
+            <a href="#turnos" class="boton">Solicitar un turno</a>
+        </section>
+
+        <section id="nosotros">
+            <h2>Sobre nosotros</h2>
+            <p>Somos una veterinaria dedicada al cuidado de perros y gatos.
+            Nuestro objetivo es brindar atención responsable, cariño y confianza.</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Nuestros servicios</h2>
+
+            <div class="servicios">
+                <article>
+                    <h3>🩺 Consultas</h3>
+                    <p>Atención veterinaria general.</p>
+                </article>
+
+                <article>
+                    <h3>💉 Vacunación</h3>
+                    <p>Control y aplicación de vacunas.</p>
+                </article>
+
+                <article>
+                    <h3>🐶 Controles</h3>
+                    <p>Seguimiento de la salud de tu mascota.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="turnos">
+            <h2>Solicitar un turno</h2>
+
+            <form id="formularioTurno">
+                <label>Nombre del dueño:</label>
+                <input type="text" id="duenio" required>
+
+                <label>Nombre de la mascota:</label>
+                <input type="text" id="mascota" required>
+
+                <label>Fecha:</label>
+                <input type="date" id="fecha" required>
+
+                <label>Veterinario:</label>
+                <select id="veterinario" required>
+                    <option value="">Seleccionar</option>
+                    <option value="Dra. Martínez">Dra. Martínez</option>
+                    <option value="Dr. González">Dr. González</option>
+                </select>
+
+                <button type="submit">Guardar turno</button>
+            </form>
+
+            <h3>Agenda de turnos</h3>
+            <div id="listaTurnos"></div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Veterinaria Patitas</p>
+            <p>Atención de lunes a sábados.</p>
+            <p>¡Estamos para cuidar a tu mascota!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Veterinaria Patitas - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
